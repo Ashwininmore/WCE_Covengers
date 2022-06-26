@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+{% load static %}
+      #nav
+     {
+         background-color: black;
+     width:100%;
+     height:66px;
+      box-shadow: 0px 1px 10px #5E5E5E;
+      position:fixed;
+      top:0px;
+    }
+
+/* .title
+ {
+display:none;
+ color:#EDEDED;
+ font-family:verdana;
+ font-size:25px;
+ width:350px;
+ margin-top:6px;
+ margin-left:150px;
+ font-weight:bold;
+ float:left;
+} */
+
+
+#navigation
+{
+ list-style-type:none; 
+}
+
+
+.bg-img {
+  /* The image used */
+  background-image: url("static/Img02.jpg");
+
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+.bg-img1 {
+  /* The image used */
+  background-image: url("static/1.jfif");
+
+  min-height: 20%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+li 
+{ 
+
+display:inline;
+ padding:25px;
+ }
+#nav a
+{
+font-size: 3.1em;
+text-transform: uppercase;
+/* text-shadow: 0 0 0.3em #fff0f0; */
+ font-weight: bold;
+ font-family:century gothic;
+  text-decoration:none;
+ color:#ffeeee;
+ /* opacity:0.26; */
+} 
+<!-- #nav a:hover -->
+<!--{-->
+<!--opacity:0;-->
+<!--}-->
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  right: 40%;
+  background-color: rgba(0, 0, 0, 0.658);
+  transform: translate(-50%, -50%);
+  color: rgb(102, 255, 255);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.hero-text .h5{
+    font-family: Garamond;
+}
+.wrapper .form .btn{
+  width: 80%;
+  margin: 20px auto 0;
+  color: #00bfff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.wrapper .form .btn a{
+  color: #fff;
+}
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+<!--body{-->
+<!--  min-height: 100vh;-->
+<!--    display: flex;-->
+<!--    align-items: center;-->
+<!--  background: #00bfff;-->
+<!--&lt;!&ndash;  background:url("static/Img01.jpg") no-repeat;&ndash;&gt;-->
+<!--  background-size: 100%;-->
+<!--  background-position: center;-->
+<!--}-->
+
+.wrapper{
+  max-width: 350px;
+  width: 100%;
+  height: 70%;
+  background: #00004d;
+  padding: 60px 45px;
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+<!--  opacity:0.8;-->
+}
+
+.wrapper .title{
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: rgb(102, 255, 255);
+}
+
+.wrapper .social_media{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .social_media .item{
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 2px solid #eeeeee;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #eeeeee;
+  transition: all 0.5s ease;
+}
+
+.wrapper .social_media .item:hover{
+  border: 2px solid #3899d9;
+  color: #00bfff;
+}
+
+.wrapper .form .input_field{
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.wrapper .form .input_field .input{
+  width: 100%;
+  padding: 12px;
+  padding-left: 30px;
+  border: none;
+  background: #eeeeee;
+}
+
+.wrapper .form .btn{
+  width: 70%;
+  margin: 20px auto 0;
+  color: #00bfff;
+  text-align: center;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.wrapper .form .btn a{
+  color: #fff;
+}
+
+.wrapper .form .input_field i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: #1d2120;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #1d2120;
+}
+::-moz-placeholder { /* Firefox 19+ */
+ color: #1d2120;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #1d2120;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+</style>
+<body>
+        <div class="bg-img">
+            <div id='nav'>
+                <p class='title'><a href='#'></a></p>
+                <ul id='navigation'>
+
+                  <li class='navigation-Blog'><a>Vehicle Parking Portal</a></li>
+
+                </ul>
+            </div>
+                    <div class="hero-text">
+                      <h5 style="font-size:40px">Walchand College of Engineeing, Pune.</h5 style="font-size:40px">
+                        <p><b>WCE Parking Area under the survillence</b></p>
+                        &nbsp;
+                      <p>To avoid traffic and out of parking of vehicles. please register here with your car details so you'll be informed if any issue occur with your vehicle.</p>
+
+                    </div>
+        </div>
+
+<form action="#" method="POST">
+  {% csrf_token %}
+<div class="wrapper">
+  <div class="title">
+    Register Here
+  </div>
+&nbsp;
+ <div class="form">
+    <div class="input_field">
+      <input type="text" name="name" placeholder="name" class="input">
+      <i class="fas fa-user"></i>
+    </div>
+
+    <div class="input_field">
+      <input type="text" name="numberPlate" placeholder="for eg. MH12JL2345" class="input">
+      <i class="fas fa-user"></i>
+    </div>
+
+    <div class="input_field">
+      <input type="text" name="contact" placeholder="contact number" class="input">
+      <i class="fas fa-user"></i>
+    </div>
+
+    <div class="input_field">
+      <input type="email"  name="email" placeholder="Email address" class="input">
+      <i class="fas fa-user"></i>
+    </div>
+
+    <div class="btn">
+      <a href="#"><button type="submit" class="btn"> Sign Up</button> </a>
+    </div>
+    <div><br>
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags}} alert-dismissible fade show" role="alert" align="center">
+              {{ message }}
+            </div>
+            {% endfor %}
+          </div>
+  </div>
+</div>
+</div>
+  </form>
+</body>
+</html>
